@@ -1,0 +1,155 @@
+Q1. Take two numbers and add them and print the result
+
+Program:-
+class sum {
+	 public static void main(String args[]) {
+		int a,b,c;
+		a=5;
+		b=6;
+		c=a+b;
+		System.out.println("Sum is ="+c);
+		
+		}
+	}
+
+Q2. Check if a given year is a leap year or not.
+
+
+Program:-
+class leapyear {
+	public static void main(String args[]) {
+		int a=2016;
+		int b=a%4;
+		if(b==0)
+		{
+			System.out.println("It is a Leap year");
+		}
+		else
+		{
+			System.out.println("It is a not Leap year");
+		}
+	}
+}	
+
+Q3. Print the pattern mention in a question
+
+Program:-
+class pattern
+public class pattern
+{
+     static public void main(String pat[])
+     {
+     	int a;
+      	int b;
+      	for(a=1;a<=4;a++)
+       	{
+        	for(b=1;b<=i;b++)
+           	{
+                 	System.out.print("*");
+          	}
+             	System.out.println(" ");
+       	}
+     }
+}
+
+Q4. WAP of java to find the biggest number among three.
+
+Program:-
+
+class greatest {
+	public static void main(String args[]){
+		int a,b,c;
+		a=5;
+		b=3;
+		c=7;
+		if(a>b&&a>c){
+			System.out.println("A is Greatest");
+			}
+			else if(b>a&&b>c){
+				System.out.println("B is Greatest");
+			}
+			else if(c>a&&c>b){
+				System.out.println("C is Greatest");
+			}
+			else{
+				System.out.println("Numbers are not distinct");
+			}
+		}
+	}
+ 
+
+Q5. Check if a number N is a palindrome or not. 
+
+Program:-
+
+class palindrome{
+	public static void main(String args[]){
+           int r, a, sum=0,temp;
+           int n=454;
+           temp=n;
+                 while(n>0)
+                    {
+                      r=n%10;
+                       sum=(sum*10)+r;
+                        n=n/10;
+                     }
+                       if(temp==sum)
+           
+                              System.out.println("palindrome number" );
+                        else
+                               System.out.println("palindrome number" );
+                    
+
+   	      }
+          }
+
+Q6. Check if a number N is prime or not.
+
+Program:-
+
+public class prime
+{
+    public static void main(String args[])
+      {
+          int a=9;
+          int i;
+          int b=0;
+          for(i=2;i<a/2;i++)
+          {
+             if(a%i==0)
+             {
+              System.out.print("not prime");
+              b=1;
+             }
+          }
+           if(b==0)
+           {
+              System.out.print("Prime number");
+           }
+      }
+}
+
+
+Q7. Find the reverse of a number N.
+
+Program:-
+
+class reversed{
+	public static void main(String args[]){
+           int num=234,reversed=0;
+            
+ 
+              while(num!=0)
+               {
+                 int digit=num%10;
+                
+                 reversed= reversed * 10 +  digit;
+                 
+                 num /=10;
+                }
+
+                     System.out.println("reversed number"+reversed);
+
+                   }
+              }
+
