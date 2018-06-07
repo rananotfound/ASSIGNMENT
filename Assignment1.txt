@@ -1,0 +1,15 @@
+Q1. WAP in Java that prints Hello world to Screen.
+Program:-
+class Helloworld {
+	public static void main (String args[]){
+		System.out.println("HELLO WORLD !!");
+		}
+	}
+
+Q2. WAP in Java to Print your Name
+Program:-
+class name {
+	public static void main (String args[]){
+		System.out.println("ASHUTOSH RANA");
+		}
+	}
