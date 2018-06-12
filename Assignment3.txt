@@ -1,0 +1,188 @@
+ASSIGNMENT 3
+
+
+Q1. Write a Java program to print the following pattern : 
+*****
+****
+***
+**
+*
+
+
+Program:-
+
+package pattern;
+
+public class Pattern {
+
+    public static void main(String[] args) {
+        int a;
+        int b;
+        for(a=1;a<=5;a++)
+       {
+          for(b=a;b<=5;b++)
+           {
+                  System.out.print("*");
+          }
+             System.out.println(" ");
+       }
+    }
+    
+}
+
+
+Q2. Take a number N from the user as input and find all even numbers upto N
+
+
+Program:-
+
+package even_number;
+import java.util.Scanner;
+
+public class Even_number {
+
+    public static void main(String[] args) {
+        Scanner num=new Scanner(System.in);
+	System.out.print("Enter value of N =");
+        int n= num.nextInt();
+        System.out.println("Entered value of N ="+n);
+        System.out.println("List of Even Numbers upto N :");
+        for (int i=1;i<=n;i++)
+        {
+               if(i%2==0)
+               {
+                   System.out.println(i);
+               }
+        }
+        
+    }
+    
+}
+
+
+
+Q3. Take a number N from the user as input and find all prime numbers upto N.
+
+
+Program:-
+
+package prime_number;
+
+import java.util.Scanner;
+public class Prime_number {
+
+    public static void main(String[] args) {
+        Scanner num=new Scanner(System.in);
+        System.out.print("Enter the value of N =");
+        int n= num.nextInt();
+        System.out.println("Entered value of N ="+n);
+        int a,b,c;
+        System.out.println("List of Prime Numbers :");
+        for(a=2;a<n;a++)
+        {
+            c=0;
+            for(b=2;b<a;b++)
+            {
+                if(a%b==0)
+                c=1;
+            }
+            if(c==0)
+            {
+                System.out.println(a);
+            }
+        }
+    }    
+}
+
+Q4. Take a number N as input from the user and check if the given number is armstrong or not. 
+
+
+Program:-
+
+package armstrongnumber;
+import java.util.Scanner;
+public class ArmstrongNumber {
+
+    public static void main(String[] args) {
+         int num,cube,total=0;
+             Scanner armsnum=new Scanner(System.in);
+             System.out.print("Enter the Number :");
+             int n= armsnum.nextInt();
+             
+                num=n;
+                  while(num!=0)
+                  {
+                      cube=num%10;
+                      num/=10;
+                       total=total+cube*cube*cube;
+             
+                  }
+                    if(total == n)
+                        System.out.println( "It is an Armstrong Number");
+                    else
+                        System.out.println( "It is NOT an Armstrong Number");
+    }    
+}
+
+Q5. Take a number N from the user and print its reverse. 
+
+
+Program:-
+
+package reverse;
+
+import java.util.Scanner;
+
+public class Reverse {
+
+    public static void main(String[] args) {
+         Scanner number=new Scanner(System.in);
+        System.out.print("Enter the value of N =");
+        int n= number.nextInt();
+        int num=n,reversed=0;
+         while(num!=0)
+               {
+                 int digit=num%10;
+                
+                 reversed= reversed*10+digit;
+                 
+                 num/=10;
+                }
+                    System.out.println("reversed number : "+reversed);
+    }  
+}
+
+Q6. Given the array A = {1,1,1,1,0,0,1,0}. Sort it in ascending order as {0,0,0,1,1,1,1,1} in least computation.
+
+
+Program:-
+
+
+
+Q7. Given a sorted array A = {1,4,6,7,8,9,10}. Write a program to take a Number N from the user and check if it is in the array or not in least computation.
+
+
+Program:-
+
+package searcharray;
+import java.util.Scanner;
+public class SearchArray {
+
+    public static void main(String[] args) {
+        int arr[]={1,4,6,7,8,9,10};
+        Scanner num=new Scanner(System.in);
+        System.out.print("Enter the Number to be searched :");
+        int n=num.nextInt();
+           int i;        
+                for ( i=0;i<arr.length;i++){
+                    if(n==arr[i])
+                    {
+                        System.out.println("Number is present in Array at index :"+i);
+                    }
+                    else
+                    {
+                        System.out.println("Number is not present in Array");
+                    }                   
+                }                
+    }        
+}
