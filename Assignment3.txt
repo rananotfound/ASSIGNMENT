@@ -53,8 +53,7 @@ public class Even_number {
                {
                    System.out.println(i);
                }
-        }
-        
+        }   
     }
     
 }
