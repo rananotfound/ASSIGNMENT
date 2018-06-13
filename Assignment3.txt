@@ -174,16 +174,16 @@ public class SearchArray {
         System.out.print("Enter the Number to be searched :");
         int n=num.nextInt();
            int i; 
-           int flag=0;
+           boolean flag=false;
                 for ( i=0;i<arr.length;i++){
                     if(n==arr[i])
                     {
                         System.out.println("Number is present in Array at index :"+i);
-                       flag=1; 
+                       flag=true; 
                     }
                                      
                 }
-                 if(flag==0)
+                 if(flag==false)
                     {
                         System.out.println("Number is not present in Array");
                     } 

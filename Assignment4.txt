@@ -1,8 +1,7 @@
-Q1. Area of Rectangle
+Q1.Create a class Rectangle with length and breadth as its data members. 
+   Create a member function called CalculateArea() which displays the area of the rectangle object.
 
 Program:-
-
-
 
 package rectangle;
 
@@ -26,3 +25,72 @@ public class Rectangle
             System.out.println("Area is :"+length*width);
         }
     }
+
+Q2.Create a class Complex with real and imaginary parts as its data members. 
+   Create a member function called Display() to display the complex number properly. 
+
+Program:-
+
+package complexnumber;
+
+public class ComplexNumber {
+
+    public static void main(String[] args) {
+            ComplexNumber complex=new ComplexNumber(4,5);
+            complex.displayNumber();
+    }
+    int real;
+    int imaginary;
+    
+    ComplexNumber(int a,int b)
+    {
+        this.real=a;
+        this.imaginary=b;
+    }
+    public void displayNumber()
+    {
+        System.out.println(""+real+"+i"+imaginary);
+    }
+}
+
+Q3.Write a program to take an array of 10 numbers as input from the user and find the second largest element in the array.
+
+Program:-
+
+package secondlargest;
+import java.util.Scanner;
+public class SecondLargest {
+
+    public static void main(String[] args) {
+        int arr[]=new int[10];
+        int i;
+        int n;
+        int large=arr[0];
+        int slarge=arr[0];
+        Scanner num=new Scanner(System.in);
+        System.out.println("Enter the elements of array =");
+        for(i=0;i<=9;i++)
+        {
+           arr[i]=num.nextInt();
+        }
+        for(i=0;i<arr.length;i++)
+        {
+            if(arr[i]>large)
+            {
+                slarge=large;
+                large=arr[i];
+            }
+            else if(arr[i]>slarge)
+            {
+                slarge=arr[i];
+            }
+        }
+        System.out.println("Second Largest no.="+slarge);
+    }
+}
+
+
+Q4. Write a program to take an array of 10 numbers from the user and arrange the elements in a waveform. 
+
+Program:-
+
