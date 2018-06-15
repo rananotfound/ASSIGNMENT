@@ -90,6 +90,35 @@ Q3. Overload Print function to accept Null arguments , one integer , one float.
 
 Program:-
 
+package functionoverloading;
+
+public class FunctionOverloading {
+        
+        public void display()
+        {
+            System.out.println("Null Value");
+        }
+        public void display(int a)
+        {
+            System.out.println("Int Value "+a);
+        }
+        public void display(float b)
+        {
+            System.out.println("Float Value "+b);
+        }
+    public static void main(String[] args) 
+    {
+        int a=4;
+        float b=(float) 2.5;
+        FunctionOverloading over=new FunctionOverloading();
+        over.display();
+        over.display(a);
+        over.display(b);
+        
+    }
+    
+}
+
 
 Q4. Print length of longest increasing sub array.
 
