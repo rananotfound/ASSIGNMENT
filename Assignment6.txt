@@ -1,0 +1,99 @@
+Q1. Create an Interface called Animals with speak(), eat() methods. 
+    Create two classes Cat and Dog implementing their own versions of these methods.
+
+Program:-
+
+
+
+
+package animals;
+
+public interface Animals {
+    
+    
+    public void speak();
+    public void eat();
+    
+}
+
+
+
+
+
+
+package animals;
+
+public class Cat implements Animals  {
+
+    public void speak() {
+        System.out.println("I am a Cat !");
+    }
+
+    public void eat() {
+        System.out.println("I eat Fish");
+    }
+    public static void main(String args[]){
+              Cat cat = new Cat();
+      cat.speak();
+      cat.eat();  
+    }
+    
+}
+
+
+
+
+
+
+package animals;
+
+public class Dog implements Animals  {
+
+    public void speak() {
+        System.out.println("I am a Dog !");
+    }
+
+    public void eat() {
+        System.out.println("I eat Meat");
+    }
+    public static void main(String args[]){
+            Dog dog = new Dog();
+          dog.speak();
+          dog.eat();
+    }
+}
+
+Q2. Create an Abstract Class Animals with color, breed and name as variables, along with eat() abstract method and also a speak() method which is not abstract.
+
+
+Program:-
+
+
+
+
+Q3. Take two numbers as string input and convert them into Integers and find the maximum of the two numbers.
+
+Program:-
+
+package stringconvert;
+
+public class StringConvert {
+
+    public static void main(String[] args) {
+        
+        
+        int a=Integer.parseInt(args[0]);
+        int b=Integer.parseInt(args[1]);
+        if(a<b)
+        {
+            System.out.println("B is Greater and The Number is :"+b);
+        }
+        else
+        {
+            System.out.println("A is Greate and The Number is :"+a);
+        }
+        
+        
+    }
+    
+}
