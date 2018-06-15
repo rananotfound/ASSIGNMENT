@@ -156,6 +156,31 @@ Q6. Given the array A = {1,1,1,1,0,0,1,0}. Sort it in ascending order as {0,0,0,
 
 Program:-
 
+package arraysort;
+public class ArraySort {
+
+    public static void main(String[] args)
+
+	{
+    int arr[]={1,1,1,1,0,0,1,0},temp,i=0;
+          for(int j=0;j<arr.length;j++)
+          {
+            if(arr[j]==0)
+            {
+              temp=arr[i];
+              arr[i]=arr[j];
+              arr[j]=temp;
+              i++;
+            }
+          }
+          System.out.println("The Sorted array is");
+          for(int k=0;k<arr.length;k++)
+          {
+            System.out.print(arr[k]+" ");
+          }
+    }
+    
+}
 
 
 Q7. Given a sorted array A = {1,4,6,7,8,9,10}. Write a program to take a Number N from the user and check if it is in the array or not in least computation.
