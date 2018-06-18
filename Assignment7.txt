@@ -1,0 +1,164 @@
+Q1. Write a Java program to reverse a String.
+
+Program :-
+
+package reversestring;
+
+public class ReverseString {
+
+    public static void main(String[] args) 
+    {
+        String strg = "abcd";
+        System.out.println("Original String : "+strg);
+        String reverse="";
+        for(int i=strg.length()-1;i>=0;i--)
+        {
+            char x=strg.charAt(i);
+            reverse=reverse+x;
+        }
+        System.out.println("Reversed String :"+reverse);
+    }
+}
+
+Q2. Write a Java program to generate all substrings of the string xyz.
+
+Program :-
+
+package substring;
+
+public class SubString 
+{   
+    public static void main(String[] args) 
+    {
+      int i, j;
+      String str="xyz";
+      
+      System.out.println("String is:"+str);
+       
+      for (j=0; j<str.length(); j++)
+      {
+         for(i = 1; i<= str.length()-j; i++)
+         {
+          
+            System.out.println(str.substring(j, j+i));
+         }
+      }
+    }
+}
+
+Q3. Write a Java program to remove all vowels from the String.
+
+Program :-
+
+package stringvowel;
+
+import java.util.Scanner;
+
+public class StringVowel {
+
+    public static void main(String[] args) {
+        
+        Scanner val = new Scanner(System.in);
+        System.out.print("Enter the String : ");
+        String st1=val.next();
+        String st2=st1.replaceAll("[aeiouAEIOU]","");
+        System.out.println("String Without Vowels : "+st2);
+    }
+}
+
+Q4. Write a Java program to print the following pattern :
+   a 
+  a b 
+ a b c
+
+Program :-
+
+
+package allpattern;
+
+public class Pattern3 
+{
+    public static void main(String args[])
+    {
+        int x;
+        int y;
+        
+        for(int i=1;i<=3;i++)
+        {
+            char ch=97;
+            for( int l=4;l>=i;l--)
+            { 
+                System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++)
+            { 
+                System.out.print(" "+ch);
+                ch++;
+            }
+                System.out.println();
+        }
+    }
+}
+
+
+Q5. Write a Java program to check occurrence of a string in another string, where both strings are taken as input from the user.
+
+Program :-
+
+package stringoccurance;
+    import java.util.Scanner;
+public class StringOccurance 
+{
+
+   public static void main(String[] args) 
+   {
+        Scanner str1=new Scanner(System.in);
+            System.out.print("The First String is : ");
+        String s1= str1.next();
+        Scanner str2=new Scanner(System.in);
+            System.out.print("The Second String is : ");
+        String s2= str2.next();
+        
+        String s3;
+        int count=0;
+        int ln1,ln2;
+               
+        ln1=s1.length();
+        ln2=s2.length();
+        
+        for(int i=0;i<=ln1-ln2;i++)
+        {
+            s3=s1.substring(i,i+ln2);
+            if(s3.equals(s2))
+                count++;
+        }
+        System.out.println(count);
+    }
+}
+
+
+Q6. Write a Java program to count the number of words in a sentence taken as input.
+
+
+Program:-
+
+package wordcount;
+
+public class WordCount {
+
+    public static void main(String[] args) 
+    {
+        String str="Hello I am Ashutosh Rana";
+        System.out.println("The Sentence is : "+str);
+        int count=1;
+        for(int i=0;i<=str.length()-1;i++){
+                        if (str.charAt(i)==' ' && str.charAt(i+1)!=' ')
+            {
+                count++;
+            }
+           }
+        System.out.println("the number of word in sentance is ="+ count);
+    }
+    
+}
+
