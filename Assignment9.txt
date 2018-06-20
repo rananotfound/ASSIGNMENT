@@ -15,16 +15,25 @@ public class Copy_File
 
         File f2 = new File ("C:\\Users\\ASHUTOSH RANA\\Desktop\\New_Folder\\new1.txt");
         
-        FileReader in = new FileReader(f1);			
+        FileReader in = new FileReader(f1);
 
-        FileWriter out = new FileWriter(f2);			
+        FileWriter out = new FileWriter(f2);
         
         int c;
         while((c=in.read()) !=-1)
         {
-            out.write(c);   			
+            out.write(c);
         }
         in.close();
         out.close();
+        
+        
+        FileReader input = new FileReader(f2);
+        int d;
+        while((d=input.read()) !=-1)
+        {
+            System.out.print((char)d);
+        }
+        input.close();
     }
 }
