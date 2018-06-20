@@ -1,0 +1,30 @@
+Q1. Use the text file and write its contents in another file.
+
+Program :-
+
+
+package make_file;
+
+import java.io. *;
+
+public class Copy_File 
+{
+    public static void main(String[] args) throws IOException
+    {
+        File f1 = new File ("C:\\Users\\ASHUTOSH RANA\\Desktop\\New_Folder\\new.txt");
+
+        File f2 = new File ("C:\\Users\\ASHUTOSH RANA\\Desktop\\New_Folder\\new1.txt");
+        
+        FileReader in = new FileReader(f1);			
+
+        FileWriter out = new FileWriter(f2);			
+        
+        int c;
+        while((c=in.read()) !=-1)
+        {
+            out.write(c);   			
+        }
+        in.close();
+        out.close();
+    }
+}
