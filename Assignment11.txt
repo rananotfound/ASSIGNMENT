@@ -1,0 +1,68 @@
+Q1. Write a Java program to compare two sets and retain elements which are same on both sets.
+
+Program :-
+
+package collection;
+import java.util.*;
+
+/**
+ *
+ * @author ASHUTOSH_RANA
+ */
+public class SetExample 
+{
+    public static void main(String[] args)
+    {
+        Set hashset1 = new HashSet();		//First Set
+        hashset1.add(1);
+        hashset1.add(2);
+        hashset1.add(3);
+        hashset1.add(4);
+        hashset1.add(5);
+        
+        
+        Set hashset2 = new HashSet();		//Second Set
+        hashset2.add(3);
+        hashset2.add(4);
+        hashset2.add(2);
+        
+        hashset1.retainAll(hashset2);
+        
+        System.out.print("Same Elements of both Sets are :"+hashset1);
+        
+    }
+    
+}
+
+Q2. Write a Java program to associate the specified value with the specified key in a HashMap.
+
+
+Program:-
+
+package collection;
+
+import java.util.*;
+
+/**
+ *
+ * @author ASHUTOSH_RANA
+ */
+public class Hash_Map 
+{
+    public static void main(String args[])
+    {
+        Map clothes = new HashMap();
+        clothes.put("Shirt", 1000);
+        clothes.put("T Shairt", 500);
+        clothes.put("Pants", 2000);
+        clothes.put("Jeans", 2000);
+        clothes.put("Blazzer", 4000);
+        clothes.put("Tie", 200);
+
+        System.out.println(clothes);
+
+        clothes.replace("Tie", 200, 450);
+
+        System.out.println(clothes);
+    }
+}
