@@ -9,15 +9,17 @@ package make_file;
 
 import java.io.*;
 
-public class Make_file {
-    public static void main(String[] args) {
+public class Make_file 
+{
+    public static void main(String[] args) 
+            throws IOException
+    {   
         File abc = new File ("C:\\Users\\ASHUTOSH RANA\\Desktop\\New_Folder\\Abc.txt");
         
-        
-        FileInputStream input;
+        FileInputStream input = new FileInputStream(abc);
         try 
         {
-            input = new FileInputStream(abc);
+        
                  
             int c;
             while ((c = input.read()) != -1) 
@@ -29,7 +31,5 @@ public class Make_file {
         {
             e.printStackTrace();
         }
-        
     }
-    
 }
