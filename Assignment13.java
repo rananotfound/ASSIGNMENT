@@ -1,6 +1,6 @@
 package threadexample;
 
-public class ThreadExample extends Thread
+class ThreadExample extends Thread
 {
 
     public synchronized void run()
